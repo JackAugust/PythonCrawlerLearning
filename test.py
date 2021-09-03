@@ -44,9 +44,9 @@ for pagenum in range(int(PageNum)):
 	print(inforName)
 	print(likeNum)
 	num = len(likeNum)
-	
+
 	patren3 = '<img onload=.*? alt=.*? title=.*? src=\"(.*?)\" />'
-	
+
 	for i in range(num):
 		if (int(likeNum[i][1]) > 500):
 			getImgDir = dir + str(inforName[i][0]) + '/' + str(likeNum[i][0]) + '/' + str(inforName[i][1] + '/')
