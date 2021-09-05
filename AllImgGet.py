@@ -79,29 +79,28 @@ for i in range(num):
 		AllPage = re.findall('</a><a href=\"(.*?)\">([0-9]*)', Get_InPagehtml)
 
 		for k in range(len(AllPage)):
+			imgPageUrl = re.compile(patren3, re.S).findall(Get_InPagehtml)
+			PageNum = len(imgPageUrl)
+			# 循环获取并保存图片
+			for l in range(PageNum):
+				GetPageImg = url+imgPageUrl[l]
+				print(GetPageImg)
+				PageImgeName = getImgDir+imgPageUrl[l].split('/')[-1]
+				print(PageImgeName)
+				time.sleep(1)
+				# 获取内部图片
+				Get_PImg = requests.get(GetPageImg, headers=headers)
+				with open(PageImgeName, 'wb') as f:
+					f.write(Get_PImg.content)
+
 			if k == len(AllPage) - 1:
 				break
-			else:
-				imgPageUrl = re.compile(patren3, re.S).findall(Get_InPagehtml)
-				PageNum = len(imgPageUrl)
-				# 循环获取并保存图片
-				for l in range(PageNum):
-					GetPageImg = url+imgPageUrl[l]
-					print(GetPageImg)
-					PageImgeName = getImgDir+imgPageUrl[l].split('/')[-1]
-					print(PageImgeName)
-					time.sleep(1)
-					# 获取封面图片
-					Get_PImg = requests.get(GetPageImg, headers=headers)
-					with open(PageImgeName, 'wb') as f:
-						f.write(Get_PImg.content)
 
-
-				# 继续下一页获取图片
-				NewPaperUrl = WebURL + AllPage[k][0]
-				time.sleep(1)
-				Get_InPage = requests.get(NewPaperUrl, headers=headers)
-				Get_InPage.encoding = 'utf-8'
-				Get_InPagehtml = Get_InPage.text
+			# 继续下一页获取图片
+			NewPaperUrl = WebURL + AllPage[k][0]
+			time.sleep(1)
+			Get_InPage = requests.get(NewPaperUrl, headers=headers)
+			Get_InPage.encoding = 'utf-8'
+			Get_InPagehtml = Get_InPage.text
 
 

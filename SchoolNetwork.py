@@ -1,3 +1,8 @@
+'''
+实现校园网自动登录
+未实现
+
+'''
 import requests
 
 headers = {

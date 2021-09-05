@@ -1,8 +1,16 @@
 import os
 import time
 
+import socket
+
 dir = r"D:/Let'sFunning/Picture/PythonGet/"
 url = "https://pic.xrmn5.com"
+
+# 解决ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。
+# 链接：
+# https://blog.csdn.net/IllegalName/article/details/77164521?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+
+socket.setdefaulttimeout(20)
 
 import requests
 
@@ -15,15 +23,15 @@ WebURL = "https://www.xrmn5.com/"
 Get_url = requests.get(URL,headers=headers)
 Get_url.encoding = 'utf-8'
 Get_html = Get_url.text
-print(Get_html)
+# 关闭当前链接
+Get_url.close()
+# print(Get_html)
 
 import re
 patrenForPageNum = '</a><a href=\"(.*?)\">'
 Get_PageNum = re.compile(patrenForPageNum,re.S).findall(Get_html)
 temp = str(Get_PageNum[len(Get_PageNum)-1])
 PageNum = "".join(list(filter(str.isdigit, temp)))
-print(temp)
-print(PageNum)
 
 # 获取所有网页，存入AllPage中
 AllPageTemp = []
@@ -53,46 +61,64 @@ for pagenum in range(int(PageNum)):
 			# 创建对应目录
 			if not os.path.exists(getImgDir):
 				os.makedirs(getImgDir)
+			else:
+				print("此目录已存在：",getImgDir)
+
 			imgUrl = url + urls[i][2]
 			imgName = getImgDir + urls[i][2].split('/')[-1]
-			print(imgName)
-			time.sleep(1)
+			print(imgUrl,imgName)
+			# time.sleep(1)
 			# 获取封面图片
-			Get_Img = requests.get(imgUrl, headers=headers)
-			with open(imgName, 'wb') as f:
-				f.write(Get_Img.content)
+			if os.path.isfile(imgName):
+				print("此封面已存在：", imgName)
+			else:
+				Get_Img = requests.get(imgUrl, headers=headers)
+				with open(imgName, 'wb') as f:
+					f.write(Get_Img.content)
+				Get_Img.close()
 			# 进入具体网页
 			IntoPageUrl = WebURL + urls[i][0]
+			print("当前写真网页为：",IntoPageUrl)
 			Get_InPage = requests.get(IntoPageUrl, headers=headers)
 			Get_InPage.encoding = 'utf-8'
 			Get_InPagehtml = Get_InPage.text
-
+			Get_InPage.close()
 			AllPage = re.findall('</a><a href=\"(.*?)\">([0-9]*)', Get_InPagehtml)
 
 			for k in range(len(AllPage)):
-				if k == len(AllPage) - 1:
-					break
-				else:
-					imgPageUrl = re.compile(patren3, re.S).findall(Get_InPagehtml)
-					PageNum = len(imgPageUrl)
-					# 循环获取并保存图片
-					for l in range(PageNum):
-						GetPageImg = url + imgPageUrl[l]
-						print(GetPageImg)
-						PageImgeName = getImgDir + imgPageUrl[l].split('/')[-1]
-						print(PageImgeName)
-						time.sleep(1)
-						# 获取封面图片
+				imgPageUrl = re.compile(patren3, re.S).findall(Get_InPagehtml)
+				PageNum = len(imgPageUrl)
+				# 循环获取并保存图片
+				for l in range(PageNum):
+					GetPageImg = url + imgPageUrl[l]
+					print(GetPageImg)
+					PageImgeName = getImgDir + imgPageUrl[l].split('/')[-1]
+					print(PageImgeName)
+					# time.sleep(1)
+					# 获取内部图片
+					if os.path.isfile(PageImgeName):
+						print("此图片已存在：",PageImgeName)
+
+					else:
 						Get_PImg = requests.get(GetPageImg, headers=headers)
 						with open(PageImgeName, 'wb') as f:
 							f.write(Get_PImg.content)
+						Get_PImg.close()
 
-					# 继续下一页获取图片
-					NewPaperUrl = WebURL + AllPage[k][0]
-					time.sleep(1)
-					Get_InPage = requests.get(NewPaperUrl, headers=headers)
-					Get_InPage.encoding = 'utf-8'
-					Get_InPagehtml = Get_InPage.text
+				if k == len(AllPage) - 1:
+					print("当前信息：",AllPage[k])
+					continue
+
+				# 继续下一页获取图片
+				NewPaperUrl = WebURL + AllPage[k][0]
+				print("开始下一页：",NewPaperUrl)
+				# time.sleep(1)
+				Get_InPage = requests.get(NewPaperUrl, headers=headers)
+				Get_InPage.encoding = 'utf-8'
+				Get_InPagehtml = Get_InPage.text
+				Get_InPage.close()
+	print("开始下一轮：",GetAllPage[pagenum])
 	Get_url = requests.get(GetAllPage[pagenum],headers=headers)
 	Get_url.encoding = 'utf-8'
 	Get_html = Get_url.text
+	Get_url.close()
