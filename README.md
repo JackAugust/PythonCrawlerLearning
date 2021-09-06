@@ -26,3 +26,8 @@
 ### - 结果展示
 ![爬取过程](https://raw.githubusercontent.com/JackAugust/PythonCrawlerLearning/master/Fig/Result.jpg)
 ![图片存储展示](https://raw.githubusercontent.com/JackAugust/PythonCrawlerLearning/master/Fig/Result01.jpg)
+
+### - 思路及实现说明
+见个人博客：
+- 饱暖思淫欲之美女图片的Python爬虫实例（一）——基础版[https://blog.csdn.net/jack_zj123/article/details/120082974](https://blog.csdn.net/jack_zj123/article/details/120082974)
+- 饱暖思淫欲之美女图片的Python爬虫实例（二）——完整版[https://blog.csdn.net/jack_zj123/article/details/120127118](https://blog.csdn.net/jack_zj123/article/details/120127118)
