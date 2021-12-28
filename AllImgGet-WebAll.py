@@ -5,7 +5,9 @@ urllib3.disable_warnings()
 import socket
 
 dir = r"D:/Let'sFunning/Picture/PythonGet/"
-url = "https://pic.xrmn5.com"
+url = "https://www.xrmn5.com/"
+# 目前网站没了。。。
+# https://xrhub.cc/image_type/XiuRen
 
 # 解决ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。
 # 链接：
@@ -52,8 +54,9 @@ for i in range(int(PageNum)):
 		AllPageTemp.append(WebURL+"/XiuRen/index"+str(i+1)+".html")
 GetAllPage += tuple(AllPageTemp)
 
-print(len(GetAllPage))
-for pagenum in range(int(PageNum)):
+print('GetAllPage:',len(GetAllPage))
+print('PageNum:',PageNum)
+for pagenum1 in range(int(len(GetAllPage))):
 	urls = re.findall('<li class="i_list list_n2"><a  href=\"(.*?)\" alt=(.*?) title=.*?><img class="waitpic" src=\"(.*?)\"', Get_html)
 	patren1 = '<div class="postlist-imagenum"><span>(.*?)</span></div></a><div class="case_info"><div class="meta-title">\[.*?\](.*?)</a></div>'
 	patren2 = '<div class="meta-post"><i class="fa fa-clock-o"></i>(.*?)<span class="cx_like"><i class="fa fa-eye"></i>(.*?)</span>'
@@ -61,23 +64,26 @@ for pagenum in range(int(PageNum)):
 	likeNum = re.compile(patren2, re.S).findall(Get_html)
 	print(urls)
 	print(inforName)
-	print(likeNum)
+	print(len(likeNum),likeNum)
 	num = len(likeNum)
-
+	#pagenum = int(len(GetAllPage)) - pagenum1 - 67
+	pagenum = int(len(GetAllPage))-pagenum1-1
+	# pagenum = pagenum1;
 	patren3 = '<img onload=.*? alt=.*? title=.*? src=\"(.*?)\" />'
 
 	for i in range(num):
-		if (int(likeNum[i][1]) > 500):
+		if (int(likeNum[i][1]) > 800):
 			getImgDir = dir + str(inforName[i][0]) + '/' + str(likeNum[i][0]) + '/' + str(inforName[i][1] + '/')
-			file_num = "".join(list(filter(str.isdigit, getImgDir)))
+			file_num = re.findall('\d+',getImgDir)
 
 			# 创建对应目录
 			if not os.path.exists(getImgDir):
 				os.makedirs(getImgDir)
 			else:
-				print("此目录已存在：",getImgDir)
-				if (len(os.listdir(getImgDir)) >= (int(file_num[12:]))):
+				if (len(os.listdir(getImgDir)) >= (int(file_num[-1]))):
+					print("此目录",getImgDir,"已存在：", len(os.listdir(getImgDir)),"个文件\n")
 					continue
+					#break
 			imgUrl = url + urls[i][2]
 			imgName = getImgDir + urls[i][2].split('/')[-1]
 			print(imgUrl,imgName)

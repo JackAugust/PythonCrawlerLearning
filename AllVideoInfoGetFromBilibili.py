@@ -1,9 +1,11 @@
 '''
-目的：设计爬虫用于获取SCI期刊信息，包括目前影响因子
-网页：https://jcr.clarivate.com/jcr/browse-journals
+目的：设计爬虫用于获取B站机器学习视频
+网页：https://search.bilibili.com/all?keyword=%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97&from_source=webtop_search&spm_id_from=333.851
+
 '''
 
-Url = 'https://jcr.clarivate.com/jcr/browse-journals'
+Url = 'https://search.bilibili.com/all?keyword=%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97&from_source=webtop_search&spm_id_from=333.851'
+
 '''
 第一步：请求网页
 '''
@@ -14,7 +16,7 @@ headers = {
 }
 
 Get_url = requests.get(Url,headers=headers)
-print(Get_url.text)
+# print(Get_url.text)
 # print(Get_url.request.headers)
 Get_html = Get_url.text
 Get_url.close()
@@ -43,10 +45,10 @@ import re
 # (.*?):获取（）内的所有
 # \"(.*?)\" 用于匹配网页
 # re.findall 用于获取（）内的数据并每存为元组
-# urls = re.findall('<li class="i_list list_n2"><a  href=\"(.*?)\" alt=(.*?) title=.*?><img src=\"(.*?)\"',Get_html)
+urls = re.findall('<li class="i_list list_n2"><a  href=\"(.*?)\" alt=(.*?) title=.*?><img src=\"(.*?)\"',Get_html)
 #patren_get_Videoinfo = '</span><a title=\"(.*?)\" href=\"//(.*?)\?from=search\" target=.*? class=.*?><em class=.*?>'
-patren_get_keyword = ''
-patren_get_pageNum = ''
+patren_get_keyword = '</span><a title=\"(.*?)\" href=\"//(.*?)\?from=search\" target=.*? class=.*?>.*?<em class="keyword">(.*?)</em>(.*?)<.*?<div class="des hide">(.*?)</div><div class=.*?><span title=\"(.*?)\" class=.*?><i class=.*?></i>\n(.*?)</span>'
+patren_get_pageNum = '<li class="page-item last"><button class="pagination-btn">(.*?)</button>'
 
 #get_Videoinfo = re.compile(patren_get_Videoinfo,re.S).findall(Get_html)
 #print(get_Videoinfo)
@@ -60,7 +62,7 @@ pageNum = list(filter(str.isdigit, str(get_pageNum)))
 
 '''
 
-# 用于将数据存入excel中
+# 用于将数据存入excle中
 '''
 import xlwt
 import xlrd

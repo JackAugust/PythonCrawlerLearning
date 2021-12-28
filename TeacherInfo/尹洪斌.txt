@@ -1,0 +1,58 @@
+[男，1979年生，研究员，博士生导师]
+电话：
+[025-86882214]
+E-mail：
+[hbyin@niglas.ac.cn]
+简历：
+研究领域及方向：沉积物（或底泥）污染物活化机制与界面过程；沉积物原位修复机理；水/沉积物修复材料研发与应用
+
+简历：
+
+    尹洪斌, 男，1979年生。2008年于中国科学院大学获博士学位，同年进入中国科学院南京地理与湖泊研究所工作，2008至2011年任湖泊环境与工程研究室助理研究员，2011年至-2017年任湖泊环境与工程研究室副研究员，2017年12月起任湖泊环境与工程研究室研究员。现任湖泊环境与工程研究室副主任和中科院南京地理与湖泊研究所学位委员会委员。 
+
+     研究兴趣主要包括（1）粘土型水环境修复材料制备与应用；（2）底泥原位钝化技术；（3）底泥污染物活化机制。近年来，主要围绕我国富营养化湖泊内源污染物活法发生机制以及底泥原位修复技术与机理方面开展了大量的具有原创性的研究工作，具体取得以下成果：（1）通过对太/巢沉积物（或底泥）进行长期调查与培养研究，揭示了沉积物磷、重金属等污染物形态活化对其水相浓度增值及污染的发生机理，为利用修复材料锁定底泥污染物易活化形态的技术方法奠定了理论基础；（2）突破了锁磷材料固磷容量扩增方法，解决了锁磷剂易悬浮的技术瓶颈问题，揭示了材料容量扩增与锁磷机理；（3）首次全面辨析了影响底泥原位钝化控磷的主要因素与机制，为湖泊内源磷治理提供强有力的技术支撑。 
+
+   主持国家自然科学基金4项（1青，3面）以及中科院前沿科学重点研究项目、中科院交叉团队、国家水体污染治理重大专项子课题、江苏省科技厅社会发展项目以及江苏省水利厅等地方委托项目数十项；发表第一/通讯作者SCI论文50余篇（二区以上22篇），在国内外重要学术会议中做专题以及主题报告；获环境保护科学技术一等奖1项（排名第10）、江苏省科学技术二等奖1项（排名第3）、江苏省“333高层次人才培养工程”等各类奖项；担任中国环境科学学会沉积物环境专业委员会秘书长、江苏省水利学会委员、中国地理学会会员等学术兼职；曾在Journal of Soils and Sediments（2020年）、Environmental Science and Pollution Research (2016)等期刊作为客座编辑。 
+
+代表性论著：
+
+
+Yin, H.B, Yang, P., Kong, M., & Li, W. (2020). Preparation of lanthanum-aluminium amended attapulgite composite as a novel inactivation material to immobilize phosphorus in lake sediment. Environmental Science & Technology,54, 18, 11602–11610. 
+
+Yin, H.B, Yang, P., Kong, M., & Li, W. (2020). Use of lanthanum/aluminum co-modified granulated attapulgite clay as a novel phosphorus (P) sorbent to immobilize P and stabilize surface sediment in shallow eutrophic lakes. Chemical Engineering Journal, 385, 123395. 
+
+Yang, P., Yang, C.H., & Yin, H.B* (2020). Dynamics of phosphorus composition in suspended particulate matter from a turbid eutrophic shallow lake (Lake Chaohu, China): Implications for phosphorus cycling and management. Science of The Total Environment, 741, 140203. 
+
+Yang, C.H., Yang, P., Geng, J., Yin, H.B*, & Chen, K. (2020). Sediment internal nutrient loading in the most polluted area of a shallow eutrophic lake (Lake Chaohu, China) and its contribution to lake eutrophication. Environmental Pollution, 114292. 
+
+Yin, H.B,, Yang, P., & Kong, M. (2019). Effects of nitrate dosing on the migration of reduced sulfur in black odorous river sediment and the influencing factors. Chemical Engineering Journal, 371, 516-523. 
+
+Yin, H.B,, Wang, J.F, Zhang, R.Y, & Tang, W.Y (2019). Performance of physical and chemical methods in the co-reduction of internal phosphorus and nitrogen loading from the sediment of a black odorous river. Science of The Total Environment, 663, 68-77. 
+
+Yin, H.B,, Yang, C., Jia, Y.X., Chen, H.H., & Gu, X.H (2018). Dual removal of phosphate and ammonium from high concentrations of aquaculture wastewaters using an efficient two-stage infiltration system. Science of the Total Environment,635, 936-946. 
+
+Yin, H.B,, Zhu, J.C., & Tang, W.Y (2018). Management of nitrogen and phosphorus internal loading from polluted river sediment using Phoslock？ and modified zeolite with intensive tubificid oligochaetes bioturbation. Chemical Engineering Journal, 353, 46-55. 
+
+Yin, H.B,, Ren, C., & Li, W. (2018). Introducing hydrate aluminum into porous thermally-treated calcium-rich attapulgite to enhance its phosphorus sorption capacity for sediment internal loading management. Chemical Engineering Journal,348, 704-712.  
+
+Yin, H.B,, Douglas, G. B., Cai, Y.J., Liu, C., & Copetti, D. (2018). Remediation of internal phosphorus loads with modified clays, influence of fluvial suspended particulate matter and response of the benthic macroinvertebrate community. Science of The Total Environment,610, 101-110.  
+
+Yin, H.B, Du, Y.X., Kong, M., & Liu, C. (2017). Interactions of riverine suspended particulate matter with phosphorus inactivation agents across sediment-water interface and the implications for eutrophic lake restoration. Chemical Engineering Journal,327, 150-161. 
+
+Yin, H.B,, Kong, M., Gu, X.H., & Chen, H.H (2017). Removal of arsenic from water by porous charred granulated attapulgite-supported hydrated iron oxide in bath and column modes. Journal of Cleaner Production,166, 88-97. 
+
+Yin, H.B,, Yan, X.W., Gu, X.H, 2017, Evaluation of thermally-modified calcium-rich attapulgite as a low-cost substrate for rapid phosphorus removal in constructed wetlands. Water Research, 115, 329-338. 
+
+Yin, H.B,, Kong, M., Han, M.X. and Fan, C.X (2016). Influence of sediment resuspension on the efficacy of geoengineering materials in the control of internal phosphorous loading from shallow eutrophic lakes. Environment Pollution. 219, 568-579.  
+
+Yin, H.B,, Han, M.X., Tang, W.Y., 2016. Phosphorus sorption and supply from eutrophic lake sediment amended with thermally-treated calcium-rich attapulgite and a safety evaluation. Chemical Engineering Journal, 285,671-678. 
+
+Yin, H.B,, Zhu, J.C, 2016. In situ remediation of metal contaminated lake sediment using naturally occurring, calcium-rich clay mineral-based low-cost amendment. Chemical Engineering Journal, 285,112-120. 
+
+Yin, H.B,, Kong, M., 2015., Reduction of sediment internal P-loading from eutrophic lakes using thermally modified calcium-rich attapulgite-based thin-layer cap. Journal of Environmental Management, 151, 178-185.  
+
+Yin, H.B,, Cai, Y.J., Duan, H.T., Gao, J.F., & Fan, C.X (2014).Use of DGT and conventional methods to predict sediment metal bioavailability to a field inhabitant freshwater snail (Bellamya aeruginosa) from Chinese eutrophic lakes. Journal of Hazardous Materials, 264, 184-194. 
+
+Yin, H.B,, Kong, M. (2014). Simultaneous removal of ammonium and phosphate from eutrophic waters using natural calcium-rich attapulgite-based versatile adsorbent. Desalination, 351, 128-137.  
+
+Yin, H.B,, Kong, M., Fan, C.X (2013). Batch investigations on P immobilization from wastewaters and sediment using natural calcium rich sepiolite as a reactive material. Water Research, 47, 4247-4258.  

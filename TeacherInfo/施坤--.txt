@@ -1,0 +1,25 @@
+[男，1985年生，研究员，博士生导师]
+电话：
+[025-86881721]
+E-mail：
+[kshi@niglas.ac.cn]
+简历：
+研究领域及方向：水环境遥感、湖泊光学
+
+简历：
+
+        施坤，1985年生，主要从事湖泊光学及水生态环境遥感研究，国家自然科学基金委优秀青年基金获得者（2019年度），中国科学院创新促进会（2017年度），中国科学院青藏高原地球科学卓越创新中心青年骨干。2007年毕业于安徽师范大学，获地理信息系统专业学士学位，2012年获南京师范大学遥感技术与应用专业博士学位，2010-2012年间受国家留学基金委资助在美国印第安纳大学-普度大学（印第安纳波利分校）从事博士联合培养研究工作，2020年起任中科院南京地理与湖泊研究所研究员，现任物理湖泊与水文研究室副主任。在Water Research、Remote Sensing of Environment、Environmental Science & Technology等领域顶级期刊共发表SCI论文85篇，CSCD论文15篇；获授权国家发明专利7项、软件著作权11项；获得吉林省科学技术一等奖、江苏省科学技术奖一等奖和生态环境部环境保护科学技术奖一等奖各1项。先后主持国家自然科学基金3项，水体污染控制与治理科技重大专项子课题1项。以大型浅水湖泊环境变化为立足点，通过综合长期定位观测、高频监测和遥感反演等手段，建立了湖泊环境立体化综合监测方法和参数化方案，刻画了参数化体系下的湖泊环境时空变化规律，拓展了对湖泊系统生态响应机制的认识，并取得了具有较好影响的研究成果，具体包括：1)针对制约卫星资料应用于湖泊水环境监测的技术瓶颈，解决了大气校正和水体光学特征量化等难题，研发了水环境和水生态多参数遥感反演模型集，实现了水环境和生态过程变化的大尺度、长时序监测；2)     针对湖泊环境变化及影响因素的高时空异质性，综合应用长期定位观测和遥感反演等系列多源数据，精细刻画了典型湖泊环境参数的时空动态规律，明晰了其变化的驱动机制；3)      针对湖泊环境变化所引发的生态问题，揭示了湖泊环境变化对蓝藻、水生植被等湖泊生态要素变化的影响，探明了湖泊生态系统对环境变化的响应机制。
+
+代表性论著：
+
+1)    Kun Shi(*); Yunlin Zhang; Kaishan Song; Mingliang Liu; Yongqiang Zhou; Yibo Zhang; Yuan Li; Guangwei Zhu; Boqiang Qin, A semi-analytical approach for remote sensing of trophic state in inland waters: Bio-optical mechanism and application, Remote Sensing of Environment, 2019, 232: 111349 
+
+2)    Kun Shi(*); Yunlin Zhang; Yibo Zhang; Na Li; Boqiang Qin; Guangwei Zhu; Yongqiang Zhou, Phenology of phytoplankton blooms in a trophic lake observed from long-term MODIS data, Environmental Science & Technology, 2019, 53(5): 2324~2331 
+
+3)    Kun Shi; Yunlin Zhang(*); Guangwei Zhu; Xiaohan Liu; Yongqiang Zhou; Hai Xu; Boqiang Qin; Ge Liu; Yunmei Li, Long-term remote monitoring of total suspended matter concentration in Lake Taihu using 250 m MODIS-Aqua data, Remote Sensing of Environment, 2015, 164: 43~56 
+
+4)    Kun Shi; Yunlin Zhang(*); Hai Xu; Guangwei Zhu; Boqiang Qin; Changchun Huang; Xiaohan Liu; Yongqiang Zhou; Heng Lv, Long-term satellite observations of microcystin concentrations in Lake Taihu during cyanobacterial bloom periods, Environmental Science & Technology, 2015, 49(11): 6448~6456 
+
+5)    Kun Shi; Yunlin Zhang(*); Yunmei Li; Lin Li; Heng Lv; Xiaohan Liu, Remote estimation of cyanobacteria-dominance in inland waters, Water Research, 2015, 68: 217~226 
+
+6)    Kun Shi; Yunlin Zhang(*); Xiaohan Liu; Mingzhu Wang; Boqiang Qin, Remote sensing of diffuse attenuation coefficient of photosynthetically active radiation in Lake Taihu using MERIS data, Remote Sensing of Environment, 2014, 140: 365~377
